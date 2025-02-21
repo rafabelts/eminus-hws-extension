@@ -1,0 +1,16 @@
+{
+  "name": "eminus-hw",
+  "version": "1.0.0",
+  "description": "Chrome extension to retrieve the due assignments",
+  "main": "dist/main.js",
+  "scripts": {
+    "bundle": "node bundle.mjs",
+    "prettier": "pnpm exec prettier . --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.25.0"
+  }
+}
