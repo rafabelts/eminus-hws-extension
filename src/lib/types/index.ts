@@ -17,4 +17,3 @@ export type Activity = {
   fechaTermino: string;
   course?: string;
 };
-

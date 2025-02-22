@@ -9,17 +9,26 @@ export const renderActivities = (
   loader: HTMLDivElement
 ) => {
   getAllActivities(token).then((activities: Array<Activity>) => {
+    const totalDues = document.createElement("p");
+    totalDues.textContent = activities.length;
+    totalDues.style.fontSize = "1.4rem";
+    totalDues.style.fontWeight = "500";
+
+    duesContainer.appendChild(totalDues);
+
     // lista de actividades
     const activitiesList = document.createElement("ul");
+    activitiesList.style.display = "flex";
+    activitiesList.style.flexDirection = "column";
+    activitiesList.style.gap = "20px";
 
     if (activities.length === 0) {
-      const congratulationMessage = document.createElement("p");
-      congratulationMessage.textContent =
-        "Felicitaciones! No tienes pendientes";
+      const noDuesMessage = document.createElement("p");
+      noDuesMessage.textContent = "No tienes pendientes";
 
       loader.remove();
       activitiesList.remove();
-      loadingDiv.appendChild(congratulationMessage);
+      loadingDiv.appendChild(noDuesMessage);
     } else {
       loadingDiv.remove();
       activitiesList.classList.add("acts-list");
@@ -55,7 +64,7 @@ export const renderActivities = (
 
       actInfo.innerHTML = `
 <p>${activity.course || ""}</p>
-<p><strong>Entrega el:</strong> ${new Date(activity.fechaTermino).toLocaleString("es-MX")}<p>
+<p><strong>Entrega:</strong> ${new Date(activity.fechaTermino).toLocaleString("es-MX")}<p>
     <span><p><strong>Descripcion:</strong></p> ${activity.descripcion}</span>
 `;
 

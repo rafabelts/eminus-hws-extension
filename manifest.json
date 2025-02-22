@@ -1,23 +1,16 @@
 {
-    "manifest_version": 3,
-    "name": "tareas-eminus",
-    "description": "get the due homeworks",
-    "version": "1.0",
-    "background": {
-        "service_worker": "dist/background.js"
-    },
-    "permissions": [
-        "tabs",
-        "storage"
-    ],
-    "content_scripts": [
-        {
-            "js": [
-                "dist/main.js"
-            ],
-            "matches": [
-                "https://eminus.uv.mx/eminus4/*"
-            ]
-        }
-    ]
+  "manifest_version": 3,
+  "name": "tareas-eminus",
+  "description": "get the due homeworks",
+  "version": "1.0",
+  "background": {
+    "service_worker": "dist/background.js"
+  },
+  "permissions": ["tabs", "storage"],
+  "content_scripts": [
+    {
+      "js": ["dist/main.js"],
+      "matches": ["https://eminus.uv.mx/eminus4/*"]
+    }
+  ]
 }

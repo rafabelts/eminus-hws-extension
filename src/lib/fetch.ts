@@ -1,6 +1,7 @@
 import { ACTIVITIES_PATH, COURSES_PATH } from "./const";
 import { mapActivities } from "./map/activity";
-import {  Activity, Course } from "./types";
+import { Activity, Course } from "./types";
+import { deleteDescriptionFromCache } from "./utils/delete-description-from-cache";
 
 const baseRequest = async <T>(
   token: string,
@@ -91,6 +92,8 @@ export const getAllActivities = async (token: string) => {
 
       activities.push(...activityWithCourse);
     }
+
+    deleteDescriptionFromCache(activities);
 
     return activities.sort(
       (a, b) =>

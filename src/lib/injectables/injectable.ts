@@ -19,11 +19,9 @@ export const injectable = () => {
     duesContainer.classList.add("dues-container");
 
     const title = document.createElement("h1");
-    title.textContent = "Tareas pendientes";
+    title.textContent = "Tareas pendientes:";
     title.style.fontSize = "1.8rem";
     title.style.fontWeight = "600";
-    title.style.padding = "15px";
-    title.style.marginBottom = "5px";
 
     // div for loader
     const loadingDiv = document.createElement("div");
