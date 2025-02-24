@@ -1,0 +1,42 @@
+name: 🚀 Solicitud de mejora 
+description: Recomienda una mejora o nueva función al proyecto
+title: "Mejora:"
+labels: ["Mejora", "status: esperando revisión"]
+body:
+
+  - type: textarea
+    id: enhancement-description
+    attributes:
+      label: Descripción de la mejora
+      placeholder: Describe la mejora o nueva función que recomiendas
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: impact-area
+    attributes:
+        label: "Área de impacto"
+        options:
+          - label: Interfaz
+          - label: Funcionalidad
+          - label: Performance
+          - label: Accesibilidad
+          - label: Documentación
+          - label: Otros (por favor específica)
+    validations:
+      required: true 
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Información adicional
+      placeholder: Proporciona cualquier detalle adicional o contexto
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Record"
+      options:
+        - label: Acepto el código de conducta del proyecto
+          required: true
+        - label: Quiero trabajar en esta función
