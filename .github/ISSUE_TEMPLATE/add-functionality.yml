@@ -1,0 +1,21 @@
+name: 💻 Nueva funcionalidad
+description: Pide una nueva funcionalidad para la aplicación
+title: "Funcionalidad:"
+labels: ["Petición de nueva función", "status: esperando revisión"]
+body:
+  - type: textarea
+    id: cual-funcion
+    attributes:
+      label: ¿Qué función?
+      placeholder: Añade una descripción de la función
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Record"
+      options:
+        - label: Acepto el código de conducta del proyecto
+          required: true
+        - label: Quiero trabajar en esta función
