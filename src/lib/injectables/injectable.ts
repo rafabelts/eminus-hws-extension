@@ -2,6 +2,10 @@ import { renderActivities } from "./render-activities";
 import { renderErrorMessage } from "./render-error-message";
 
 export const injectable = () => {
+  if (document.querySelector(".wrapper")) {
+    return;
+  }
+
   const mainDiv = document.querySelector(
     ".d-flex.flex-column.align-items-center.mt-3"
   );

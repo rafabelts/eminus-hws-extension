@@ -1,9 +1,8 @@
-name: 🚀 Solicitud de mejora 
+name: 🚀 Solicitud de mejora
 description: Recomienda una mejora o nueva función al proyecto
 title: "Mejora:"
 labels: ["Mejora", "status: esperando revisión"]
 body:
-
   - type: textarea
     id: enhancement-description
     attributes:
@@ -15,16 +14,16 @@ body:
   - type: checkboxes
     id: impact-area
     attributes:
-        label: "Área de impacto"
-        options:
-          - label: Interfaz
-          - label: Funcionalidad
-          - label: Performance
-          - label: Accesibilidad
-          - label: Documentación
-          - label: Otros (por favor específica)
+      label: "Área de impacto"
+      options:
+        - label: Interfaz
+        - label: Funcionalidad
+        - label: Performance
+        - label: Accesibilidad
+        - label: Documentación
+        - label: Otros (por favor específica)
     validations:
-      required: true 
+      required: true
 
   - type: textarea
     id: additional-information
