@@ -110,6 +110,6 @@ Despues de agregar los cambios, dirigete al forked repo y ve a la seccion pull r
 
 Llena el formulario y da la descripcion necesaria
 
-Finalmente aprieta en Submit y listo, se hara la contribucion 🎉
+Finalmente aprieta en Submit y listo, se hara la contribucion
 
 > Nota: cualquier duda me puedes contactar al correo rafabeltrans17@gmail.com
