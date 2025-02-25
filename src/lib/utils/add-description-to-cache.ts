@@ -11,15 +11,15 @@ export const addDescriptionToCache = async (
       }
     );
 
-    console.log("API called");
-
-    if (!response.ok) throw new Error("Failed to fetch summary");
+    if (!response.ok) {
+      throw new Error("Failed to fetch summary");
+    }
 
     const summaryDescription = await response.text();
 
     chrome.storage.local.set({ [String(idActividad)]: summaryDescription });
 
-    return response.text();
+    return summaryDescription;
   } catch (error) {
     return "No se tiene descripción";
   }
