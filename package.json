@@ -5,7 +5,7 @@
   "main": "dist/main.js",
   "scripts": {
     "bundle": "node bundle.mjs",
-    "prettier": "pnpm exec prettier . --write"
+    "format": "pnpm exec prettier . --write"
   },
   "keywords": [],
   "author": "",

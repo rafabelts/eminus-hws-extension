@@ -6,8 +6,8 @@ body:
   - type: textarea
     id: bug-description
     attributes:
-      label: Descripción del bug 
-      placeholder: Describe el bug encontrado 
+      label: Descripción del bug
+      placeholder: Describe el bug encontrado
     validations:
       required: true
 
@@ -15,7 +15,7 @@ body:
     id: expected-behavior
     attributes:
       label: Comportamiento esperado
-      placeholder: Describe que esperabas que pasara 
+      placeholder: Describe que esperabas que pasara
     validations:
       required: true
 
@@ -23,7 +23,7 @@ body:
     id: actual-behavior
     attributes:
       label: Comportamiento real
-      placeholder: Describe que paso realmente 
+      placeholder: Describe que paso realmente
     validations:
       required: true
 
