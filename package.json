@@ -1,6 +1,6 @@
 {
   "name": "eminus-hw",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Chrome extension to retrieve the due assignments",
   "main": "dist/main.js",
   "scripts": {

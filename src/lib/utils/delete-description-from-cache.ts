@@ -10,8 +10,6 @@ export const deleteDescriptionFromCache = async (
 
   const actsToRemove = cachedIds.filter((id) => !currentActIds.includes(id));
 
-  console.log(`acts to remove: ${actsToRemove.length}`);
-
   if (actsToRemove.length > 0) {
     await chrome.storage.local.remove(actsToRemove);
   }
